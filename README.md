@@ -26,3 +26,11 @@ Build fat jar of project and dependencies with:
   mvn package
   ```
 
+## Development
+
+Run tests with:
+- ```
+  mvn test
+  ```
+
+
