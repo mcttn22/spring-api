@@ -21,9 +21,10 @@ Run API with:
   mvn spring-boot:run
   ```
 
-Build fat jar of project and dependencies with:
+Build and run fat jar of project and dependencies with:
 - ```
-  mvn package
+  mvn package &&
+  java -cp target/spring-api-fatjar.jar com.mcttn22.springapi.SpringApi
   ```
 
 ## Development
