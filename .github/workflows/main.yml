@@ -20,14 +20,11 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        java-version: '11'
+        java-version: '22'
         distribution: 'temurin'
-        architecture: x64
 
     - name: Install dependencies
-      run: |
-        mvn clean install
+      run: mvn clean install
 
     - name: Test
-      run: |
-        mvn test
+      run: mvn test
