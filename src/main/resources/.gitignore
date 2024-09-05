@@ -1,0 +1,4 @@
+application.properties
+
+# Don't ignore this placeholder file for the directory to be recognised by git
+!.gitignore
