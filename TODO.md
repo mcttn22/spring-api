@@ -1,6 +1,7 @@
 ### Todo
 
 - Spring Boot todo rest api
+    - Add create database option for POST requests
 	- Use of database
     - CI/CD
     - Design patterns
