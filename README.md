@@ -18,6 +18,8 @@
      cd spring-api
      ```
 
+3. Add application.properties file to src/main/resources/
+
 ## Usage
 
 Run API with:
