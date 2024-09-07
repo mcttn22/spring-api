@@ -1,14 +1,23 @@
 package com.mcttn22.springapi;
 
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.Test;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-import org.junit.Test;
-
+@SpringBootTest
+@AutoConfigureMockMvc
 public class SpringApiTest
 {
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	@Autowired
+	private MockMvc mockMvc;
+
+	@Test
+	public void getRequestShouldReturnOkStatus() throws Exception {
+		this.mockMvc.perform(get("/")).andExpect(status().isOk());
+	}
 }
+
